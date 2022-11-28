@@ -25,45 +25,43 @@ let educationName2 = document.querySelector("#educationName2");
 let educationType3 = document.querySelector("#educationType3");
 let educationYear3 = document.querySelector("#educationYear3");
 let educationName3 = document.querySelector("#educationName3");
-console.log(window.location.pathname)
-     
-if (window.location.pathname == "/page3.html"){             // Kör endast async funktionen på sida3 //
-    async function getJson(){
-        let response = await fetch("/utbildningar.json");
-        if (response.ok){
-            let data = await response.json();
-            workPlace1.textContent = data.workhistory[0].name;
-            workPlaceYear1.textContent = data.workhistory[0].year;
-            workPlaceInfo1.textContent = data.workhistory[0].info;         
-            
-            workPlace2.textContent = data.workhistory[1].name;
-            workPlaceYear2.textContent = data.workhistory[1].year;
-            workPlaceInfo2.textContent = data.workhistory[1].info;
-            
-            workPlace3.textContent = data.workhistory[2].name;
-            workPlaceYear3.textContent = data.workhistory[2].year;
-            workPlaceInfo3.textContent = data.workhistory[2].info;
-    
-            workPlace4.textContent = data.workhistory[3].name;
-            workPlaceYear4.textContent = data.workhistory[3].year;
-            workPlaceInfo4.textContent = data.workhistory[3].info;
-    
-            education1.textContent = data.education[0].educationtype;
-            educationYear1.textContent = data.education[0].year;
-            educationName1.textContent = data.education[0].name;
-    
-            education2.textContent = data.education[1].educationtype;
-            educationYear2.textContent = data.education[1].year;
-            educationName2.textContent = data.education[1].name;
-    
-            educationType3.textContent = data.education[2].educationtype;
-            educationYear3.textContent = data.education[2].year;
-            educationInfo3.textContent = data.education[2].info;
-        }
-    }
-    getJson();
-}
 
+
+async function getJson(){
+    let response = await fetch("/utbildningar.json");
+    if (response.ok){
+        let data = await response.json();
+        workPlace1.textContent = data.workhistory[0].name;
+        workPlaceYear1.textContent = data.workhistory[0].year;
+        workPlaceInfo1.textContent = data.workhistory[0].info;         
+        
+        workPlace2.textContent = data.workhistory[1].name;
+        workPlaceYear2.textContent = data.workhistory[1].year;
+        workPlaceInfo2.textContent = data.workhistory[1].info;
+        
+        workPlace3.textContent = data.workhistory[2].name;
+        workPlaceYear3.textContent = data.workhistory[2].year;
+        workPlaceInfo3.textContent = data.workhistory[2].info;
+
+        workPlace4.textContent = data.workhistory[3].name;
+        workPlaceYear4.textContent = data.workhistory[3].year;
+        workPlaceInfo4.textContent = data.workhistory[3].info;
+
+        education1.textContent = data.education[0].educationtype;
+        educationYear1.textContent = data.education[0].year;
+        educationName1.textContent = data.education[0].name;
+
+        education2.textContent = data.education[1].educationtype;
+        educationYear2.textContent = data.education[1].year;
+        educationName2.textContent = data.education[1].name;
+
+        educationType3.textContent = data.education[2].educationtype;
+        educationYear3.textContent = data.education[2].year;
+        educationInfo3.textContent = data.education[2].info;
+    }
+}
+getJson();
+    
 
                                     // MODAL //
 let images = document.getElementsByClassName("pg4-img");
