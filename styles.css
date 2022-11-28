@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f1f1f1;
+
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color:#f1f1f1;
+    border-bottom:3px solid #6d9aaf;
+}
+header > h1 {
+    font-size:2em;
+    color:#454b55;
+    align-self: center;
+    padding-left:3%;
+}
+.ul-in-header li{
+    font-size: 1.2em;
+    padding:10px;
+    margin:15px;
+    color:#454b55;
+}
+.ul-in-header{
+    list-style-type: none;
+    display:flex;
+}
+a{
+    color:#454b55;
+}
+a{
+    text-decoration: none;
+}
+.active-pg{
+    text-decoration: underline;
+    color:#6d9aaf;
+}
+.pg1-section-container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:  1fr 4fr;
+    grid-template-areas: 
+    " . . . . . . . ."
+    ". . div1 div1 div2 div2 . ."
+    ;
+    background-image: linear-gradient(to bottom, #7eb9d300, #7eb9d3),
+    url("bg.jpg");
+}
+.pg1-pic{                          /* startsida, profilbild */
+    grid-area: div1;
+}
+.main-page-img {
+        max-width: 100%;
+        height:100%;
+}
+.pg1-pic-text{
+    background-color: #f1f1f1;
+    grid-area: div2;
+    font-size:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pg1-pic-text p{
+    padding-top: 0.9rem;
+}
+.section-aside{
+    grid-area: div3;
+    background-color: #7eb9d3;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+.main-pg-aside {
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: 
+    ". . div3 div3 div3 div3 . ."
+    ;
+}
+.section-aside i{
+    font-size:2em;
+    margin-right:3%; 
+}
+                                            /* PAGE2 */
+.pg2-container{
+    background-image: url(bg.jpg);
+    height:92vh;
+}
+.pg2-container > div {
+    height:100%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". wrapper wrapper wrapper wrapper . "
+}
+.wrapper{
+    grid-area: wrapper;
+    background-color: #6d9aaf;
+    padding:1em;
+    display:flex;
+    margin:10% 0 10% 0;
+    border-radius: 5px;
+    color:white;
+}
+.presentation-txt{
+    padding-top: 8%;
+    text-align: center;
+}
+.pg2-headline{
+    margin-bottom: 0.7em;
+}
+.presentation-txt > p {
+    padding:0.5em;
+    max-width:70%;
+    margin:auto;
+}
+.form-grid{
+    align-self: center;
+    height:70%;
+    grid-area:formgrid;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". title title ."
+    ". fname email ."
+    ". phone phone ."
+    ". msg msg  ."
+    ". msg msg  ."
+    ". msg msg  ."
+    ". msg msg  ."
+    ". button button  ."
+    ;
+    grid-gap:0.6em;
+    
+}
+.form-grid > h4 {
+    grid-area: title;
+    
+    font-size: 1.3em;
+}
+
+.fname{
+    grid-area: fname;
+}
+.email{
+    grid-area:email;
+}
+.phone{
+    grid-area: phone
+}
+.msg{
+    grid-area: msg;
+}
+.pg-2-button{
+    grid-area:button;
+    background-color:#18bd5b;
+    border-radius: 5px;
+    border:0;
+    text-align: center;
+    letter-spacing:2px
+}
+                                                /* page 3 */
+.pg3-container{
+    background-image: url(bg.jpg);
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 92vh;
+    grid-template-areas: 
+    ". sec3 sec3 sec3 ."
+    ". sec3 sec3 sec3 ."
+    ". sec3 sec3 sec3 ."
+    ". sec3 sec3 sec3 ."
+    ;
+}
+.pg-3-section{
+    grid-area: sec3;
+    color:#454b55;
+    background-color: #92c4db;
+    border-right:1rem ridge #92c4db;
+    border-left: 1rem groove #92c4db;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "art1 art2"
+    "art3 art4"
+    ;
+    grid-gap:0.8em;
+}
+.pg-3-section article{
+    padding: 6%;
+    background-color: white;
+}
+.art1-pg3{
+    grid-area: art1;
+    
+}
+.art2-pg3{
+    grid-area: art2;
+}
+.art3-pg3{
+    grid-area: art3;
+}
+.art4-pg3{
+    grid-area: art4;
+}
+.art-title-pg3{
+    text-decoration: underline;
+}
+.pg-3-section span {
+    font-weight: 700;
+}
+.art-main-title{
+    display:flex;
+    justify-content: center;
+    background-color:#f1f1f1 ;
+    padding:1rem;
+    align-items: center;
+    border-radius:5px;
+}
+.art-title{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:1em;
+    margin-top:3em;
+}
+.art1-pg3 p{
+    margin-left:0.2em;
+    margin-right:0.2em;
+}
+.art-main-title i {
+    font-size: 2em;
+    padding-right:0.3rem;
+}
+                                /* PAGE 4 */
+.pg-4-section{
+    grid-area: sec3;
+    color:#454b55;
+    background-color: #92c4db;
+    border-right:1rem ridge #92c4db;
+    border-left: 1rem groove #92c4db;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: 
+    "header"
+    "item1"
+    "item2"
+    ;
+    grid-gap:0.8em;
+}
+.pg4-title{
+    grid-area: header;
+    align-self:end;
+    font-size: 2em;
+    padding:1%;
+    justify-self: center;
+    letter-spacing: 0.1em;
+    
+}
+.pg4-portf1, .pg4-portf2{
+    grid-area: item1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:1%;
+    background-color:#98cbe2 ;
+    border:1px dotted #618292;
+}
+.pg4-portf2{
+    grid-area: item2;   /* ändrar från item1 till item2 */
+}
+.pg4-img{
+    max-height:290px;
+    max-width:200px;
+    margin-top:10%; 
+    }
+.wallpaper-link{
+    align-self: end;
+    justify-self: end;
+}
+
+@media (max-width: 	870px){
+    .ul-in-header{
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        background-color: #d0e7f9;
+        background-image: url("bg.jpg");
+        background-size:stretch;
+        background-repeat: no-repeat;
+    }
+    #h1 {
+        font-size:2em;
+        padding:0.5em 1em 0.2em 1em;
+        color:white;
+        background-color: #6d9aaf;
+        border:1px solid black;
+        width:100%;
+        text-align:center;
+    }
+    li {
+        font-size: 1em;
+        text-align: center;
+        border:1px solid #454b55;
+        border-radius: 20px;
+        background-color: #eef8ff;
+        font-weight:600;
+    }
+    .pg1-section-container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr auto;
+        grid-template-areas: 
+        "div1 div1 div1"
+        "div2 div2 div2"
+        "div3 div3 div3"
+    }
+    .main-pg-aside {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-areas: 
+        "div3 div3 div3 div3 div3 div3 div3 div3"
+    ;
+    }
+    .pg2-container > div {
+        height:100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "wrapper"
+    }
+    .wrapper{
+        width:100vw;
+    }
+    .presentation-txt{
+        padding-bottom: 2.5rem;
+    }
+    .pg3-container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 92vh;
+        grid-template-areas: 
+        "sec3 sec3 sec3"
+        "sec3 sec3 sec3"
+        "sec3 sec3 sec3"
+        "sec3 sec3 sec3"
+    }
+    .pg-3-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "art1"
+        "art3" 
+        "art2"
+        "art4"
+    }
+    .wrapper{
+        flex-direction: column;
+        margin:0px;
+        background-color: #6d9aaf;
+    }
+    .pg4-portf1, .pg4-portf2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pg4-img{
+    max-height:290px;
+    max-width:250px;
+    margin-top:10%; 
+    }
+    
+}
+
+/* Uppgift 2 - Modal */
+
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+}
+.modal-content{
+    background-color: white;
+    margin:5% auto;
+    padding:20px;
+    width:40%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+.close-button{
+    float:right;
+    font-size:30px;
+    color:#ccc;
+    
+}
+.close-button:hover{
+    color:blacK;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.modal-img{
+    background-color: white;
+    width:100%;
+}

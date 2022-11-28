@@ -1,0 +1,41 @@
+{
+    "workhistory":[
+        {
+            "name":"Makalös AB, Stockholm",
+            "year":"2011 - 2013",
+            "info":"Telemarketing, rekrytering av medlemmar till Riksförbundet M Sverige."
+        },
+        {
+            "name":"C&L, Dallas, Texas",
+            "year":"2014 - 2015",
+            "info":"Företagets syfte är att lägga ut kabel i utomhusmiljöer. Min roll bestod av av fysiskt arbete."
+        },
+        {
+            "name":"Café Näverbergs Coffee Corner AB ",
+            "year":"2016 - 2019",
+            "info":"Arbetade i café. Mina arbetsuppgifter kretsade kring ordermottagning, servering och betalning av kunder  "
+        },
+        {
+            "name":"CJ's Ledsagarservice AB",
+            "year":"2016 - Nuvarande",
+            "info":"Ledsagning, det vill säga att bistå synskadade personer med assistans för att förenkla deras vardag."
+        }
+    ],
+    "education":[
+        {
+        "educationtype":"Grundskola",
+        "year":"2001 - 2009",
+        "name":"Lädersättraskolan, Ulvsättraskolan och Källtorpskolan"
+        },
+    {
+        "educationtype":"Gymnasie",
+        "year":"2009 - 2011",
+        "name":"IT-gymnasiet Sundbyberg, Stockholm / Sundbyberg"
+    },
+    {
+        "educationtype":"Yrkeshögskola - Chas Academy",
+        "year":"2022 - Nuvarande",
+        "info":"Utbildning inom yrkeshögskola med inrikting fullstack-Javascript"
+    }
+    ]
+}
