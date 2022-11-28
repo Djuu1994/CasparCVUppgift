@@ -28,7 +28,7 @@ let educationName3 = document.querySelector("#educationName3");
 
 
 async function getJson(){
-    let response = await fetch("/utbildningar.json");
+    let response = await fetch("./utbildningar.json");
     if (response.ok){
         let data = await response.json();
         workPlace1.textContent = data.workhistory[0].name;
